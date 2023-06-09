@@ -2,11 +2,20 @@ import { motion } from 'framer-motion';
 import About from './About';
 import ImageBanner from './ImageBanner';
 
+import { GiBrickWall } from 'react-icons/gi';
+
 const WelcomeHero = () => {
 	return (
 		<div className='bg-gradient-to-b from-light via-[#FEF9F6] to-light h-[93vh] flex flex-col  justify-between'>
-			<div className=' h-full flex flex-col justify-around'>
+			<div className=' h-full flex flex-col justify-around '>
 				<BusinessName />
+				<div className='grid place-items-center text-5xl lg:text-7xl'>
+					<div className='flex '>
+						<GiBrickWall className="text-primary"/>
+						<GiBrickWall className="text-secondary"/>
+						<GiBrickWall className="text-primary"/>
+					</div>
+				</div>
 				<TopBanner />
 			</div>
 			<ImageBanner />
@@ -23,7 +32,7 @@ export default WelcomeHero;
 const TopBanner = () => {
 	return (
 		<div className=' text-lg text-end max-w-7xl mx-auto  lg:text-3xl tracking-wider font-thin scale-y- text-secondary'>
-			<div className="scale-y-150 text-2xl">651 252-1819</div>
+			<div className='scale-y-150 text-2xl'>651 252-1819</div>
 		</div>
 	);
 };
