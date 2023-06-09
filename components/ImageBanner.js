@@ -7,13 +7,13 @@ const ImageBanner = () => {
 	const image = [house, cornerwall, chimney];
 
 	return (
-		<div className='grid grid-cols-3 mb-24'>
+		<div className='grid grid-cols-3'>
 			{image.map((img, index) => {
 				return (
 					<div key={index} className="">
 						<Image
 							src={img}
-							className='w-full h-[50vw] md:h-[33vw] lg:h-[25vw] object-cover '
+							className='h-[40vh] object-cover '
 							alt=''
 						/>
 					</div>

@@ -8,6 +8,7 @@ import Services from '../components/Services';
 
 import WelcomeHero from '../components/WelcomeHero';
 import Footer from '../components/Footer';
+import About from '../components/About';
 
 const scrollToTop = () => {
 	window.scrollTo({
@@ -22,7 +23,8 @@ export default function Home() {
 			<LandingBanner />
 			<WelcomeHero />{' '}
 			<div className='mt-12'>
-				<ImageBanner />
+				<div className="my-24">
+				<About /></div>
 				<Services />
 			</div>
 			<div className=' mb-24 text-3xl grid place-items-center gap-4'>

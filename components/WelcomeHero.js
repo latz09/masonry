@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 import About from './About';
+import ImageBanner from './ImageBanner';
 
 const WelcomeHero = () => {
 	return (
-		<div className="bg-gradient-to-b from-light via-[#FEF9F6] to-light">
-		
-			<div className='  h-[65vh]  border-primary g lg:gap-0 flex flex-col justify-center gap-12 lg:justify-around'>
+		<div className='bg-gradient-to-b from-light via-[#FEF9F6] to-light h-[93vh] flex flex-col  justify-between'>
+			<div className=' h-full flex flex-col justify-around'>
 				<BusinessName />
 				<TopBanner />
-				<About />
 			</div>
+			<ImageBanner />
 		</div>
 	);
 };
@@ -23,19 +23,19 @@ export default WelcomeHero;
 const TopBanner = () => {
 	return (
 		<div className=' text-lg text-end max-w-7xl mx-auto  lg:text-3xl tracking-wider font-thin scale-y- text-secondary'>
-			<span>651 252-1819</span>
+			<div className="scale-y-150 text-2xl">651 252-1819</div>
 		</div>
 	);
 };
 
 const BusinessName = () => {
 	return (
-		<div className='grid place-items-center gap-4 tracking-wider'>
-			<div className="grid place-items-center gap-3 lg:gap-5">
-				<div className='scale-y-150 text-4xl lg:text-6xl text-primary'>
+		<div className='grid place-items-center gap-4 tracking-wider h-ful'>
+			<div className='grid place-items-center gap-4 lg:gap-5'>
+				<div className='scale-y-150 text-5xl lg:text-6xl text-primary'>
 					D & D Masonry
 				</div>
-				<div className="text-sm md:text-base">Masonry in St. Paul, MN</div>
+				<div className='text-base'>Masonry in St. Paul, MN</div>
 			</div>
 			<div className='text-xl lg:text-3xl opacity-80 scale-y-150 text-center'>
 				{' '}

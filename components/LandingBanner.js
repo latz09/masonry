@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const LandingBanner = () => {
 	return (
-		<div className='landing-banner '>
+		<div className='landing-banner grid place-items-center '>
 			<motion.div
 				whileHover={{ scale: 0.9 }} // Scale up on hover
 				whileTap={{ scale: 0.84 }} // Scale down on tap

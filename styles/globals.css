@@ -11,6 +11,6 @@ body {
 
 @layer components {
 	.landing-banner {
-		@apply text-xl lg:text-2xl p-4    cursor-pointer text-center text-primary bg-light   sticky top-0 z-50;
+		@apply text-xl lg:text-2xl h-[7vh]   cursor-pointer text-center text-primary bg-light   sticky top-0 z-50;
 	}
 }
