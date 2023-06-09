@@ -54,7 +54,7 @@ const BeforeAndAfters = () => {
 					</motion.div>
 				))}
 			</div>
-			<div className='grid gap-16 mt-12'>
+			<div className='grid '>
 				{numImagesToShow < images.length && (
 					<div className='text-center '>
 						<button className=' ' onClick={handleLoadMore}>

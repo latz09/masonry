@@ -32,7 +32,7 @@ const AllServices = [
 const Services = () => {
 	return (
 		<div className="grid place-items-center gap-16 bg-gradient-to-t from-light via-[#F0FDFF] to-light">
-			<div className="text-4xl scale-y-150 tracking-wider">Services</div>
+			<div className="text-3xl lg:text-4xl scale-y-150 tracking-wider">What We Do</div>
 			<div className='grid lg:grid-cols-2 place-items-center gap-16 lg:gap-8 w-full lg:w-[80vw] mb-48  mx-auto'>
 				{AllServices.map((service, index) => {
 					return (

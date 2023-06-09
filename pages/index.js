@@ -5,7 +5,7 @@ import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import LandingBanner from '../components/LandingBanner';
 import Reviews from '../components/Reviews';
 import Services from '../components/Services';
-
+import { motion } from 'framer-motion';
 import WelcomeHero from '../components/WelcomeHero';
 import Footer from '../components/Footer';
 import About from '../components/About';
@@ -23,16 +23,22 @@ export default function Home() {
 			<LandingBanner />
 			<WelcomeHero />{' '}
 			<div className='mt-12'>
-				<div className="my-24">
-				<About /></div>
+				<div className='my-24'>
+					<About />
+				</div>
 				<Services />
 			</div>
-			<div className=' mb-24 text-3xl grid place-items-center gap-4'>
+			<motion.div
+				className=' mb-24 text-3xl grid place-items-center gap-4 '
+				initial={{ opacity: 0, x: -100 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				transition={{ duration: 1.5, delay: 0.9 }}
+			>
 				<p className='scale-y-150'>Call now</p>
 				<div className='text-secondary'>651 252-1819</div>
-			</div>
+			</motion.div>
 			<div className=' mb-24 text-3xl grid place-items-center gap-4'>
-				<p className='scale-y-150'>Recent Transformations</p>
+				<p className='scale-y-150 text-primary'>Recent Transformations</p>
 			</div>
 			<div className='grid gap-24'>
 				<BeforeAndAfters />
@@ -49,7 +55,7 @@ export default function Home() {
 					</div>
 				</button>
 			</div>
-		<Footer />
+			<Footer />
 		</div>
 	);
 }
