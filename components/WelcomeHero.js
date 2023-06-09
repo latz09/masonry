@@ -2,20 +2,21 @@ import { motion } from 'framer-motion';
 import About from './About';
 import ImageBanner from './ImageBanner';
 
-import { GiBrickWall } from 'react-icons/gi';
+import { GiTrowel } from 'react-icons/gi';
 
 const WelcomeHero = () => {
 	return (
-		<div className='bg-gradient-to-b from-light via-[#FEF9F6] to-light h-[93vh] flex flex-col  justify-between'>
+		<div className='bg-gradient-to-b from-light via-[#FEF9F6] to-light h-[90vh] flex flex-col  justify-between'>
 			<div className=' h-full flex flex-col justify-around '>
 				<BusinessName />
-				<div className='grid place-items-center text-5xl lg:text-7xl'>
-					<div className='flex '>
-						<GiBrickWall className="text-primary"/>
-						<GiBrickWall className="text-secondary"/>
-						<GiBrickWall className="text-primary"/>
-					</div>
-				</div>
+				<motion.div
+					animate={{ rotate: 360 }}
+					transition={{ duration: 2.5 }}
+					className='grid place-items-center text-6xl text-primary'
+				>
+					<GiTrowel />
+				</motion.div>
+
 				<TopBanner />
 			</div>
 			<ImageBanner />
