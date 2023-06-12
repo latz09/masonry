@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
+import { AiFillCaretDown } from 'react-icons/ai';
 import imgBandA1 from '../public/images/before-after-1.png';
 import imgbandA2 from '../public/images/before-after-2.png';
 import imgbandA3 from '../public/images/before-after-3.png';
@@ -38,7 +39,6 @@ const BeforeAndAfters = () => {
 		setNumImagesToShow((prevNum) => prevNum + 3);
 	};
 
-
 	return (
 		<>
 			<div className='grid md:grid-cols-2 xl:grid-cols-3 place-items-center max-w-7xl mx-auto gap-y-12 gap-x-4'>
@@ -58,15 +58,15 @@ const BeforeAndAfters = () => {
 				{numImagesToShow < images.length && (
 					<div className='text-center '>
 						<button className=' ' onClick={handleLoadMore}>
-							<div className='scale-y-150 text-primary  font px-3 py-1 rounded text-lg lg:text-2xl'>
-								{' '}
-								View More{' '}
+							<div className='scale-y-150 text-primary  font px-3 py-1 rounded text-xl lg:text-3xl grid place-items-center '>
+								<span>View More</span>
+                                <span>
+                                    <AiFillCaretDown />
+                                </span>
 							</div>
 						</button>
 					</div>
 				)}
-
-				
 			</div>
 		</>
 	);
