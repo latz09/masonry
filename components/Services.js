@@ -10,13 +10,15 @@ const AllServices = [
 	},
 	{
 		service: 'Structural and Decorative Walls',
-		description: 'Uncover your walls hidden charm with our renewal approach. Specializing in restoration, we rejuvenate your masonry, restoring its strength and beauty for enduring appeal to your property',
+		description:
+			'Uncover your walls hidden charm with our renewal approach. Specializing in restoration, we rejuvenate your masonry, restoring its strength and beauty for enduring appeal to your property',
 		image: '/images/wall.png',
 		icon: '2',
 	},
 	{
 		service: 'Driveway Craftsmanship',
-		description: 'Elevate your homes curb appeal with our expert driveway refurbishment services. We skillfully restore worn-out driveways, blending classic charm with the resilience needed for everyday use.',
+		description:
+			'Elevate your homes curb appeal with our expert driveway refurbishment services. We skillfully restore worn-out driveways, blending classic charm with the resilience needed for everyday use.',
 		image: '/images/houseview.png',
 		icon: '3',
 	},
@@ -31,15 +33,23 @@ const AllServices = [
 
 const Services = () => {
 	return (
-		<div className="grid place-items-center gap-16 bg-gradient-to-t from-light via-[#F0FDFF] to-light">
-			<div className="text-3xl lg:text-4xl scale-y-150 tracking-wider">What We Do</div>
+		<div className='grid place-items-center gap-16 bg-gradient-to-t from-light via-[#F0FDFF] to-light'>
+			<div className='text-3xl lg:text-4xl scale-y-150 tracking-wider'>
+				<motion.div
+					initial={{ opacity: 0, y: 200 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1.2, delay: 0.1 }}
+				>
+					What We Do
+				</motion.div>
+			</div>
 			<div className='grid lg:grid-cols-2 place-items-center gap-16 lg:gap-8 w-full lg:w-[80vw] mb-48  mx-auto'>
 				{AllServices.map((service, index) => {
 					return (
 						<motion.div
-							initial={{ opacity: 0, y : 100 }}
-							whileInView={{ opacity: 1, y : 0 }}
-							transition={{ duration: .4 }}
+							initial={{ opacity: 0, y: 100 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.4 }}
 							key={index}
 							className='h-[50vh] w-full  sm:w-4/5 lg:w-3/4 shadow-lg hover:scale-95 transition duration-700 '
 						>

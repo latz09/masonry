@@ -28,7 +28,8 @@ export default function Home() {
 				className='
 			-12'
 			>
-				<div className='my-24'>
+				<div className='my-24 grid place-items-center gap-16'>
+				<div className="text-3xl lg:text-4xl scale-y-150 tracking-wider">Who We Are</div>
 					<About />
 				</div>
 				<Services />
