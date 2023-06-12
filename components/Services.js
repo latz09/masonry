@@ -36,7 +36,7 @@ const Services = () => {
 		<div className='grid place-items-center gap-16 bg-gradient-to-t from-light via-[#F0FDFF] to-light'>
 			<div className='text-3xl lg:text-4xl scale-y-150 tracking-wider'>
 				<motion.div
-					initial={{ opacity: 0, y: 200 }}
+					initial={{ opacity: 0, y: 100 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1.2, delay: 0.1 }}
 				>
