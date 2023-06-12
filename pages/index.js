@@ -20,9 +20,15 @@ const scrollToTop = () => {
 export default function Home() {
 	return (
 		<div className='grid'>
-			<div className='h-[10vh] grid place-items-center sticky top-0 z-50 bg-primary shadow-lg'>
+			<motion.div className='h-[10vh] grid place-items-center sticky top-0 z-50 bg-primary shadow-lg'
+			initial={{ opacity: 0, y: -100 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 1.5, delay: 0.3 }}
+			
+			>
+
 				<LandingBanner />
-			</div>
+			</motion.div>
 			<WelcomeHero />{' '}
 			<div
 				className='
