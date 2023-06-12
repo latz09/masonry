@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import About from './About';
 import ImageBanner from './ImageBanner';
 
-import { GiTrowel } from 'react-icons/gi';
+
 
 const WelcomeHero = () => {
 	return (
@@ -34,13 +34,13 @@ const TopBanner = () => {
 const BusinessName = () => {
 	return (
 		<div className='grid place-items-center gap-4 tracking-wider h-ful'>
-			<div className='grid place-items-center gap-4 lg:gap-5'>
+			<div className='grid place-items-center gap-6 lg:gap-8'>
 				<div className='scale-y-150 text-5xl lg:text-6xl text-primary'>
 					D & D Masonry
 				</div>
-				<div className='text-base'>Masonry in St. Paul, MN</div>
+				<div className='text-lg scale-y-125'>Masonry in St. Paul, MN</div>
 			</div>
-			<div className='text-xl lg:text-3xl opacity-80 scale-y-150 text-center'>
+			<div className='text-xl lg:text-3xl opacity-80 scale-y-125 tracking-widest mx-1 text-center'>
 				{' '}
 				From Deterioration Investigation to Full Restoration.
 			</div>

@@ -20,11 +20,14 @@ const scrollToTop = () => {
 export default function Home() {
 	return (
 		<div className='grid'>
-			<div className="h-[10vh] grid place-items-center sticky top-0 z-50 bg-light">
-			<LandingBanner /></div>
+			<div className='h-[10vh] grid place-items-center sticky top-0 z-50 bg-primary shadow-lg'>
+				<LandingBanner />
+			</div>
 			<WelcomeHero />{' '}
-			<div className='
-			-12'>
+			<div
+				className='
+			-12'
+			>
 				<div className='my-24'>
 					<About />
 				</div>

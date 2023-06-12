@@ -69,7 +69,7 @@ const Service = ({ service, description, i, image }) => {
 				className='absolute h-full w-full object-cover '
 			/>
 			<div className='absolute inset-0 bg-gradient-to-t from-dark/0  via-dark/50 to-dark/0 z-10  grid place-items-center'>
-				<h3 className='font-bold text-2xl tracking-wider lg:text-3xl scale-y-150 text-light '>
+				<h3 className='font-bold text-3xl tracking-wider opacity-80 lg:text-3xl text-center scale-y-150 text-light '>
 					{service}
 				</h3>
 				{/* <div className='px-4 mb-8 bg-gradient-to-t from-dark via-dark to-dark/0 text-light grid gap-2 text-lg  text-justify  '>
