@@ -17,16 +17,16 @@ const scrollToTop = () => {
 	});
 };
 
+
 export default function Home() {
 	return (
 		<div className='grid'>
-			<motion.div className='h-[10vh] grid place-items-center sticky top-0 z-50 bg-primary shadow-lg'
-			initial={{ opacity: 0, y: -100 }}
-			animate={{ opacity: 1, y: 0 }}
-			transition={{ duration: 1.5, delay: 0.3 }}
-			
+			<motion.div
+				className='h-[10vh] grid place-items-center sticky top-0 z-50 bg-primary shadow-lg'
+				initial={{ opacity: 0, y: -100 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 1.5, delay: 0.3 }}
 			>
-
 				<LandingBanner />
 			</motion.div>
 			<WelcomeHero />{' '}
@@ -35,7 +35,9 @@ export default function Home() {
 			-12'
 			>
 				<div className='my-24 grid place-items-center gap-16'>
-				<div className="text-3xl lg:text-4xl scale-y-150 tracking-wider">Who We Are</div>
+					<div className='text-3xl lg:text-4xl scale-y-150 tracking-wider'>
+						Who We Are
+					</div>
 					<About />
 				</div>
 				<Services />
