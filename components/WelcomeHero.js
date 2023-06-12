@@ -7,15 +7,8 @@ import { GiTrowel } from 'react-icons/gi';
 const WelcomeHero = () => {
 	return (
 		<div className='bg-gradient-to-b from-light via-[#FEF9F6] to-light h-[90vh] flex flex-col  justify-between'>
-			<div className=' h-full flex flex-col justify-around '>
+			<div className=' h-full flex flex-col gap-8 justify-center'>
 				<BusinessName />
-				<motion.div
-					animate={{ rotate: 360 }}
-					transition={{ duration: 2.5 }}
-					className='grid place-items-center text-6xl text-primary'
-				>
-					<GiTrowel />
-				</motion.div>
 
 				<TopBanner />
 			</div>

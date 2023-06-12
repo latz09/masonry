@@ -20,9 +20,11 @@ const scrollToTop = () => {
 export default function Home() {
 	return (
 		<div className='grid'>
-			<LandingBanner />
+			<div className="h-[10vh] grid place-items-center sticky top-0 z-50 bg-light">
+			<LandingBanner /></div>
 			<WelcomeHero />{' '}
-			<div className='mt-12'>
+			<div className='
+			-12'>
 				<div className='my-24'>
 					<About />
 				</div>
@@ -32,7 +34,7 @@ export default function Home() {
 				className=' mb-24 text-3xl grid place-items-center gap-4 '
 				initial={{ opacity: 0, x: -100 }}
 				whileInView={{ opacity: 1, x: 0 }}
-				transition={{ duration: 1.5, delay: 0.9 }}
+				transition={{ duration: 1.5, delay: 0.3 }}
 			>
 				<p className='scale-y-150'>Call now</p>
 				<div className='text-secondary'>651 252-1819</div>
