@@ -36,7 +36,7 @@ const BusinessName = () => {
 		<div className='grid place-items-center gap-4 tracking-wider h-ful'>
 			<div className='grid place-items-center gap-6 lg:gap-8'>
 				<div className='scale-y-150 text-5xl lg:text-6xl text-primary'>
-					D & D Masonry
+					New name
 				</div>
 				<div className='text-lg scale-y-125'>Masonry in St. Paul, MN</div>
 			</div>
