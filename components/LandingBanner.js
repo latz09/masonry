@@ -10,7 +10,7 @@ const LandingBanner = () => {
 				animate={{ opacity: 1 }}
 				transition={{ delay: 1.8, duration: 1.33 }}
 			>
-				<div>Request a Quote</div>
+				<div>Request a Quotess</div>
 				<GiTrowel className='text-2xl text-secondar ' />
 			</motion.div>
 		</div>
